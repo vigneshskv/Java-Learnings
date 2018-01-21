@@ -1,4 +1,16 @@
-# File IO:
+# Files and IO:
+  A stream can be defined as a sequence of data. There are two kinds of Streams
+  - InPutStream − The InputStream is used to read data from a source.
+  - OutPutStream − The OutputStream is used for writing data to a destination.
+  
+  1. [Byte Streams](#byte-streams)
+  2. []()
+  
+## Byte Streams
+
+
+
+
   1. [File](#file)
   2. [FileWriter](#filewriter) (not recommended)
   3. [FileReader](#filereader) (not recommended)
