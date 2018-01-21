@@ -1,12 +1,12 @@
 # File IO:
-  ## 1. File
-  ## 2. FileWriter
+  1. File
+  2. FileWriter
   3. FileReader
   4. BufferedWriter
   5. BufferedReader
   6. PrintWriter
   
-# File:
+## File:
   ```java
   
   file f = new file("file_path.extension");
