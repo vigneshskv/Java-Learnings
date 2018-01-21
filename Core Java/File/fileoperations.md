@@ -5,6 +5,12 @@
   
   1. [Byte Streams](#byte-streams)
   2. [Character Streams](#character-streams)
+    - [File](#file)
+    - [FileWriter](#filewriter) (not recommended)
+    - [FileReader](#filereader) (not recommended)
+    - [BufferedWriter](#bufferedwriter)
+    - [BufferedReader](#bufferedreader)
+    - [PrintWriter](#printwriter)
   3. [Standard Streams](#standard-streams)
       - [Standard Input](#standard-input)
       - [Standard Output](#standard-output)
@@ -24,13 +30,6 @@
 
 ## Character Streams
   Java Character streams are used to perform input and output for 16-bit unicode
-
-  1. [File](#file)
-  2. [FileWriter](#filewriter) (not recommended)
-  3. [FileReader](#filereader) (not recommended)
-  4. [BufferedWriter](#bufferedwriter)
-  5. [BufferedReader](#bufferedreader)
-  6. [PrintWriter](#printwriter)
   
   ## File
   ```java
