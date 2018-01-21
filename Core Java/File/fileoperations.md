@@ -54,3 +54,46 @@
   
   **Cons:**
   - Reads file character by character and not line by line. 
+  
+## BufferedWriter
+  ```java
+  
+  BufferedWriter bw = new BufferedWriter(Writer w );
+   BufferedWriter bw = new BufferedWriter(Writer w, int buffersize);
+  
+  ```
+  
+  Read textual/character data from the file, but use `newline()` method whihc relieves the programmer of taking care of representation of line separator in different platform.
+  i.e, FileWriter + newline().
+  
+  **NOTE:**
+  - BufferedWriter cannot communicate directly with File, it can communicate only via Writer object only.
+  - When closing BufferedWriter underlying Writer is automatically closed and hence we need not close the Writer object.
+  
+  **Cons:**
+  - Reads file character by character and not line by line. 
+  
+## BufferedReader
+  ```java
+  
+  BufferedReader br = new BufferedReader(Reader r);
+  BufferedReader br = new BufferedReader(Reader r, int uffersize);
+
+  ```
+    
+  To read character/textual data from file. Has advantage over FileReader by facilitating reading data line by line.
+  i.e, BufferedReader = FileReader + readline().
+
+
+## PrintWriter
+  ```java
+  
+  PrintWriter pr = new PrintWriter(Strring filename);
+  PrintWriter pr = new PrintWriter(File f);
+  PrintWriter pr = new PrintWriter(Writer w);
+  
+  ```
+  
+  Most enhanced writer to write character data to file. Main advantage is it can write any ype of java primitive type iretly to file.
+  
+  
