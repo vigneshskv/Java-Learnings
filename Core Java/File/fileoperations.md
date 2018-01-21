@@ -1,7 +1,31 @@
 # Files and IO:
+  Java's IO package mostly concerns itself with the reading of raw data from a source and writing of raw data to a destination. The most typical sources and destinations of data are these:
+    - Files
+    - Pipes
+    - Network Connections
+    - In-memory Buffers (e.g. arrays)
+    - System.in, System.out, System.error
+    
+ Streams in Java IO can be either byte based (reading and writing bytes) or character based (reading and writing characters).
+
   A stream can be defined as a sequence of data. There are two kinds of Streams
   - InPutStream − The InputStream is used to read data from a source.
   - OutPutStream − The OutputStream is used for writing data to a destination.
+  
+#Java IO Purposes and Features
+    Java IO contains many subclasses of the InputStream, OutputStream, Reader and Writer classes. The reason is, that all of these subclasses are addressing various different purposes. That is why there are so many different classes. The purposes addressed are summarized below:
+
+    File Access
+    Network Access
+    Internal Memory Buffer Access
+    Inter-Thread Communication (Pipes)
+    Buffering
+    Filtering
+    Parsing
+    Reading and Writing Text (Readers / Writers)
+    Reading and Writing Primitive Data (long, int etc.)
+    Reading and Writing Objects
+    These purposes are nice to know about when reading through the Java IO classes. They make it somewhat easier to understand what the classes are targeting.
   
   1. [Byte Streams](#byte-streams)
   2. [Character Streams](#character-streams)
