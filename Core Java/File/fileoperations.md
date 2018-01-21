@@ -42,7 +42,13 @@
   
 ![Image of Java IO classification](https://www.tutorialspoint.com/java/images/file_io.jpg)  
 
+| Byte Based | Character Based |
+| --- | --- | --- | --- |
+| Inout | Output | Input | Output |
+| --- | --- | --- | --- |
 
+| git status | List all new or modified files |
+| git diff | Show file differences that haven't been staged |
 
   
 ## Byte Streams
