@@ -77,12 +77,15 @@
   ```java
   
   BufferedReader br = new BufferedReader(Reader r);
-  BufferedReader br = new BufferedReader(Reader r, int uffersize);
+  BufferedReader br = new BufferedReader(Reader r, int buffersize);
 
   ```
     
   To read character/textual data from file. Has advantage over FileReader by facilitating reading data line by line.
   i.e, BufferedReader = FileReader + readline().
+  
+  **Cons:**
+  - Writes only char and String, i.e, not supports other type such as int, float, boolean, and o write these other types we need to pass them as string which affects the performance of the system.
 
 
 ## PrintWriter
