@@ -1,12 +1,12 @@
 # File IO:
   1. [File](#file)
-  2. FileWriter
-  3. FileReader
-  4. BufferedWriter
-  5. BufferedReader
-  6. PrintWriter
+  2. [FileWriter](#filewriter)
+  3. [FileReader](#filereader)
+  4. [BufferedWriter](#bufferedwriter)
+  5. [BufferedReader](#bufferedreader)
+  6. [PrintWriter](#printwriter)
   
-## File:
+## File
   ```java
   
   file f = new file("file_path.extension");
@@ -20,7 +20,7 @@
     the file.
   - Java FileIO is based on UNIX, and hence file and directory both are considered as file in java.
 
-# FileWriter
+## FileWriter
   ```java
   
   // Below two constructors overwrites existing data.
