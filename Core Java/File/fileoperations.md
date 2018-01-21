@@ -22,15 +22,18 @@
 
 # FileWriter
   ```java
+  
   // Below two constructors overwrites existing data.
   FileWriter fw = new FileWriter(String filename);
   FileWriter fw = new FileWriter(File f);
   
   // Below two constructors appends to existing data.
    FileWriter fw = new FileWriter(String filename, boolean append);
-   ileWriter fw = new FileWriter(File f, boolean append);
-  
+   FileWriter fw = new FileWriter(File f, boolean append);
   
   ```
   
   Writes textual/character data to the file.
+  **NOTE:**
+  - If the specified file in the constructor doesn'e exist, they will create the file and then wrtie data into it.
+  
