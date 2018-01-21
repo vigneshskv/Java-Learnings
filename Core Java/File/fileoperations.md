@@ -6,9 +6,9 @@
   1. [Byte Streams](#byte-streams)
   2. [Character Streams](#character-streams)
   3. [Standard Streams](#standard-streams)
-      3.1 [Standard Input](#standard-input)
-      3.2 [Standard Output](#standard-output)
-      3.3 [Standard Error](#standard-error)
+      - [Standard Input](#standard-input)
+      - [Standard Output](#standard-output)
+      - [Standard Error](#standard-error)
   
   
 ## Byte Streams
