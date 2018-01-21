@@ -4,8 +4,8 @@
   - OutPutStream − The OutputStream is used for writing data to a destination.
   
   1. [Byte Streams](#byte-streams)
-  2. [Character Streams](character-streams)
-  3. [Standard Streams](standard-streams)
+  2. [Character Streams](#character-streams)
+  3. [Standard Streams](#standard-streams)
   
   
 ## Byte Streams
@@ -125,3 +125,8 @@
   - Need not call separate method such as `newline()` in BufferedReader, `pintln("data")` will write data and insert newline.
 
 
+## Standard Streams
+  Standard IO input output- keyboard, monitor.
+  ### Standard Input
+  ### Standard Output
+  ### Standard Error
