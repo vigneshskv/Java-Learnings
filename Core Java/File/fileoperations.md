@@ -59,7 +59,7 @@
   ```java
   
   BufferedWriter bw = new BufferedWriter(Writer w );
-   BufferedWriter bw = new BufferedWriter(Writer w, int buffersize);
+  BufferedWriter bw = new BufferedWriter(Writer w, int buffersize);
   
   ```
   
