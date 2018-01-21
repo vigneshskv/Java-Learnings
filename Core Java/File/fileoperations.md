@@ -4,7 +4,9 @@
   - OutPutStream − The OutputStream is used for writing data to a destination.
   
   1. [Byte Streams](#byte-streams)
-  2. []()
+  2. [Character Streams](character-streams)
+  3. [Standard Streams](standard-streams)
+  
   
 ## Byte Streams
   Java byte streams are used to perform input and output of 8-bit bytes. 
@@ -26,100 +28,100 @@
   6. [PrintWriter](#printwriter)
   
   ## File
-    ```java
+  ```java
 
-    file f = new file("file_path.extension");
+  file f = new file("file_path.extension");
 
-   ```
+ ```
 
-    This creates a new file object.
+  This creates a new file object.
 
-    **NOTE:**
-    - This doesnt create physical file, rather just creates object and if the file_path already exists then just points to 
-      the file.
-    - Java FileIO is based on UNIX, and hence file and directory both are considered as file in java.
+  **NOTE:**
+  - This doesnt create physical file, rather just creates object and if the file_path already exists then just points to 
+    the file.
+  - Java FileIO is based on UNIX, and hence file and directory both are considered as file in java.
 
-  ## FileWriter
-    ```java
+## FileWriter
+  ```java
 
-    // Below two constructors overwrites existing data.
-    FileWriter fw = new FileWriter(String filename);
-    FileWriter fw = new FileWriter(File f);
+  // Below two constructors overwrites existing data.
+  FileWriter fw = new FileWriter(String filename);
+  FileWriter fw = new FileWriter(File f);
 
-    // Below two constructors appends to existing data.
-     FileWriter fw = new FileWriter(String filename, boolean append);
-     FileWriter fw = new FileWriter(File f, boolean append);
+  // Below two constructors appends to existing data.
+   FileWriter fw = new FileWriter(String filename, boolean append);
+   FileWriter fw = new FileWriter(File f, boolean append);
 
-    ```
+  ```
 
-    Writes textual/character data to the file.
+  Writes textual/character data to the file.
 
-    **NOTE:**
-    - If the specified file in the constructor doesn'e exist, they will create the file and then wrtie data into it.
+  **NOTE:**
+  - If the specified file in the constructor doesn'e exist, they will create the file and then wrtie data into it.
 
-    **Cons:**
-    - Programmer have to manually insert "\n"(line separator) in writer else all data will be written in single line.
-    - Different systems use different representation for line separator.
+  **Cons:**
+  - Programmer have to manually insert "\n"(line separator) in writer else all data will be written in single line.
+  - Different systems use different representation for line separator.
 
-  ## FileReader
-    ```java
+## FileReader
+  ```java
 
-    FileReader fr = new FileReader(String filename);
-    FileReader fr = new FileReader(File f);
+  FileReader fr = new FileReader(String filename);
+  FileReader fr = new FileReader(File f);
 
-    ```
+  ```
 
-    Read textual/character data from the file. 
+  Read textual/character data from the file. 
 
-    **Cons:**
-    - Reads file character by character and not line by line. 
+  **Cons:**
+  - Reads file character by character and not line by line. 
 
-  ## BufferedWriter
-    ```java
+## BufferedWriter
+  ```java
 
-    BufferedWriter bw = new BufferedWriter(Writer w );
-    BufferedWriter bw = new BufferedWriter(Writer w, int buffersize);
+  BufferedWriter bw = new BufferedWriter(Writer w );
+  BufferedWriter bw = new BufferedWriter(Writer w, int buffersize);
 
-    ```
+  ```
 
-    Read textual/character data from the file, but use `newline()` method whihc relieves the programmer of taking care of representation of line separator in different platform.
-    i.e, FileWriter + newline().
+  Read textual/character data from the file, but use `newline()` method whihc relieves the programmer of taking care of representation of line separator in different platform.
+  i.e, FileWriter + newline().
 
-    **NOTE:**
-    - BufferedWriter cannot communicate directly with File, it can communicate only via Writer object only.
-    - When closing BufferedWriter underlying Writer is automatically closed and hence we need not close the Writer object.
+  **NOTE:**
+  - BufferedWriter cannot communicate directly with File, it can communicate only via Writer object only.
+  - When closing BufferedWriter underlying Writer is automatically closed and hence we need not close the Writer object.
 
-    **Cons:**
-    - Reads file character by character and not line by line. 
+  **Cons:**
+  - Reads file character by character and not line by line. 
 
-  ## BufferedReader
-    ```java
+## BufferedReader
+  ```java
 
-    BufferedReader br = new BufferedReader(Reader r);
-    BufferedReader br = new BufferedReader(Reader r, int buffersize);
+  BufferedReader br = new BufferedReader(Reader r);
+  BufferedReader br = new BufferedReader(Reader r, int buffersize);
 
-    ```
+  ```
 
-    To read character/textual data from file. Has advantage over FileReader by facilitating reading data line by line.
-    i.e, BufferedReader = FileReader + readline().
+  To read character/textual data from file. Has advantage over FileReader by facilitating reading data line by line.
+  i.e, BufferedReader = FileReader + readline().
 
-    **Cons:**
-    - Writes only char and String, i.e, not supports other type such as int, float, boolean, and o write these other types we need to pass them as string which affects the performance of the system.
+  **Cons:**
+  - Writes only char and String, i.e, not supports other type such as int, float, boolean, and o write these other types we need to pass them as string which affects the performance of the system.
 
 
-  ## PrintWriter
-    ```java
+## PrintWriter
+  ```java
 
-    PrintWriter pr = new PrintWriter(Strring filename);
-    PrintWriter pr = new PrintWriter(File f);
-    PrintWriter pr = new PrintWriter(Writer w);
+  PrintWriter pr = new PrintWriter(Strring filename);
+  PrintWriter pr = new PrintWriter(File f);
+  PrintWriter pr = new PrintWriter(Writer w);
 
-    ```
+  ```
 
-    Most enhanced writer to write character data to file. Main advantage is it can write any ype of java primitive type iretly to file.
+  Most enhanced writer to write character data to file. Main advantage is it can write any ype of java primitive type iretly to file.
 
-    **Pros:**
-    - Supports writing all primitiv types.
-    - Need not call separate method such as `newline()` in BufferedReader, `pintln("data")` will write data and insert newline.
+  **Pros:**
+  - Supports writing all primitiv types.
+  - Need not call separate method such as `newline()` in BufferedReader, `pintln("data")` will write data and insert newline.
 
-  
+
