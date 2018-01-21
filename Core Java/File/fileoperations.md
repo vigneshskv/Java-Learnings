@@ -39,5 +39,18 @@
   - If the specified file in the constructor doesn'e exist, they will create the file and then wrtie data into it.
   
   **Cons:**
-  - Have manually insert "\n" in writer else all data will be written in single line.
+  - Programmer have to manually insert "\n"(line separator) in writer else all data will be written in single line.
+  - Different systems use different representation for line separator.
   
+## FileReader
+  '''java
+  
+  FileReader fr = new FileReader(String filename);
+  FileReader fr = new FileReader(File f);
+  
+  '''
+  
+  Read textual/character data from the file. 
+  
+  **Cons:**
+  - Reads file character by character and not line by line. 
