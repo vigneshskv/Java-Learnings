@@ -99,4 +99,8 @@
   
   Most enhanced writer to write character data to file. Main advantage is it can write any ype of java primitive type iretly to file.
   
+  **Pros:**
+  - Supports writing all primitiv types.
+  - Need not call separate method such as `newline()` in BufferedReader, `pintln("data")` will write data and insert newline.
+  
   
