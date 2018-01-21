@@ -42,13 +42,30 @@
   
 ![Image of Java IO classification](https://www.tutorialspoint.com/java/images/file_io.jpg)  
 
-| Byte Based | Character Based |
-| --- | --- | --- | --- |
-| Inout | Output | Input | Output |
-| --- | --- | --- | --- |
 
-| git status | List all new or modified files |
-| git diff | Show file differences that haven't been staged |
+| | Byte Based | Byte Based | Character Based | Character Based |
+| --- | --- | --- | --- | --- |
+| | Inout | Output | Input | Output |
+| --- | --- | --- | --- | --- |
+| Basic | InputStream | OutputStream | Reader/InputStreamReader | Writer/OutputStreamWriter |
+| Arrays | ByteArrayInputStream | ByteArrayOutputStream | CharArrayReader | CharArrayWriter |
+| Files | 	FileInputStream/RandomAccessFile | FileOutputStream/RandomAccessFile | FileReader | FileWriter |
+| Pipes | PipedInputStream | PipedOutputStream | PipedReader | PipedWriter |
+| Buffering | BufferedInputStream | BufferedOutputStream | BufferedReader | BufferedWriter |
+| Filtering | FilterInputStream | FilterOutputStream | FilterReader | FilterWriter |
+| Parsing | 	PushbackInputStream/StreamTokenizer |  | PushbackReader/LineNumberReader |  |
+| Strings |  |  | StringReader | StringWriter |
+| Data | DataInputStream | DataOutputStream |  |  |
+| Data - Formatted |  | PrintStream |  | PrintWriter |
+| Object | ObjectInputStream | ObjectOutputStream |  |  |
+| Utilities | SequenceInputStream |  |  |  |
+
+
+
+
+
+
+
 
   
 ## Byte Streams
