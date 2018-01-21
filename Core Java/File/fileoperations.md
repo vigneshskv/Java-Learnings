@@ -1,7 +1,7 @@
 # File IO:
   1. [File](#file)
-  2. [FileWriter](#filewriter)
-  3. [FileReader](#filereader)
+  2. [FileWriter](#filewriter) (not recommended)
+  3. [FileReader](#filereader) (not recommended)
   4. [BufferedWriter](#bufferedwriter)
   5. [BufferedReader](#bufferedreader)
   6. [PrintWriter](#printwriter)
