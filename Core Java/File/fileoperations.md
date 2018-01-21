@@ -43,12 +43,12 @@
   - Different systems use different representation for line separator.
   
 ## FileReader
-  '''java
+  ```java
   
   FileReader fr = new FileReader(String filename);
   FileReader fr = new FileReader(File f);
   
-  '''
+  ```
   
   Read textual/character data from the file. 
   
