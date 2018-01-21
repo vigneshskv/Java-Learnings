@@ -10,7 +10,7 @@
       - [Standard Output](#standard-output)
       - [Standard Error](#standard-error)
   
-[Image of Java IO classification](https://www.tutorialspoint.com/java/images/file_io.jpg)  
+![Image of Java IO classification](https://www.tutorialspoint.com/java/images/file_io.jpg)  
 
   
 ## Byte Streams
