@@ -7,6 +7,12 @@
   2. []()
   
 ## Byte Streams
+  Java byte streams are used to perform input and output of 8-bit bytes. 
+  1. [FileInputStream](fileinputstream)
+  2. [FileOutputStream](fileoutputstream)
+  
+  ### FileInputStream
+  ### FileOutputStream
 
 
 
