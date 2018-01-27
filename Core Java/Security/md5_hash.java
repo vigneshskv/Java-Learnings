@@ -4,7 +4,7 @@ import java.security.MessageDigest;
 
 import sun.misc.BASE64Encoder;
 
-public class MainClass {
+public class md5_hash {
   public static void main(String[] args) throws Exception {
     MessageDigest md = MessageDigest.getInstance("MD5");
     BufferedInputStream in = new BufferedInputStream(new FileInputStream("inputfile.txt"));
